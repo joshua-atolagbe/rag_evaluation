@@ -1,5 +1,5 @@
 [project]
-name = "rag-eval"
+name = "rag_eval"
 version = "0.1.0"
 description = "A robust Python package for evaluating Retrieval-Augmented Generation (RAG) systems."
 readme = "README.md"
@@ -17,7 +17,6 @@ classifiers = [
   "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]
 
-# Dependencies required at runtime:
 dependencies = [
   "pandas>=1.0",
   "openai>=0.27",
@@ -28,8 +27,7 @@ dependencies = [
 "Homepage" = "https://github.com/OlaAkindele/rag_eval"
 
 [tool.setuptools.packages.find]
-namespaces = true
-where = ["src"]
+where = ["."]
 
 [build-system]
 requires = [

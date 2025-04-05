@@ -3,7 +3,7 @@ name = "rag_eval"
 version = "0.1.0"
 description = "A robust Python package for evaluating Retrieval-Augmented Generation (RAG) systems."
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = "MIT"
 authors = [
   { name = "Ola Akindele", email = "akindele.ok@gmail.com" }
@@ -11,8 +11,7 @@ authors = [
 keywords = ["rag", "nlp", "evaluation"]
 classifiers = [
   "Development Status :: 3 - Alpha",
-  "Programming Language :: Python :: 3.8",
-  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
   "Intended Audience :: Developers",
   "Topic :: Scientific/Engineering :: Artificial Intelligence"
 ]

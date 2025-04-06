@@ -1,7 +1,6 @@
 LICENSE
 README.md
 pyproject.toml
-setup.cfg
 gpt_evaluator/__init__.py
 gpt_evaluator/config.py
 gpt_evaluator/evaluator.py

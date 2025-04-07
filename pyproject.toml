@@ -1,5 +1,5 @@
 [project]
-name = "rag_eval"
+name = "rag_evaluation"
 version = "0.1.0"
 description = "A robust Python package for evaluating Retrieval-Augmented Generation (RAG) systems."
 readme = "README.md"

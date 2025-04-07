@@ -1,5 +1,5 @@
 """
-RAG Eval package
+RAG Evaluation package
 
 Provides tools for evaluating Retrieval-Augmented Generation (RAG) projects
 by scoring generated responses across various metrics.

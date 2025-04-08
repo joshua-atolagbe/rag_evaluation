@@ -9,7 +9,7 @@ Currently, the default evaluator is based on GPT. In future, additional evaluato
 """
 
 # Import and re-export all public functionality from the gpt_evaluator sub-package.
-from .gpt_evaluator import (
+from .gpt_evaluation import (
     get_openai_key,
     evaluate,
     evaluate_all,

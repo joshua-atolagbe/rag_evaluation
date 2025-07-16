@@ -63,7 +63,13 @@ key = get_api_key("openai", default_key="sk-fallback...")
 ### Open-Source Local Models (Ollama models; does not require external APIs)
 **Currently, the package supports Llama, Mistral, and Qwen.**
 
+**Step 1**: Download Ollama. Check [here](https://ollama.com/download) for instructions  <br>
+
+**Step 2**:  Check from the list of [models](https://ollama.com/search) and download using `ollama pull <model_name>`
+
 ```python
+
+#check the list of models available on your local PC
 from openai import OpenAI
 
 client = OpenAI(
@@ -76,8 +82,8 @@ models = client.models.list()
 print(models.to_json())
 
 ```
+#### Usage with Open-Source Models (Ollama models)
 
-### Usage with Open-Source Models (Ollama models)
 
 ```python
 from rag_evaluation.evaluator import evaluate_response

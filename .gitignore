@@ -13,6 +13,8 @@ venv/
 .env
 test/
 test
+tests/
+tests
 replacements.txt
 .ipynb_checkpoints/
 rag_evaluation_notebook.ipynb

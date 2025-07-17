@@ -1,4 +1,5 @@
 import pandas as pd
+import math
 from typing import Dict, Tuple, Any, Optional
 import openai
 from google import genai
@@ -124,8 +125,10 @@ def evaluate_response(query: str, response: str, document: str,
     #use user-defined weights
     if "metric_weights" in kwargs:
         # [Query Relevance, Factual Accuracy, Coverage, Coherence, Fluency]
-        if len(kwargs["metric_weights"]) != 5 or sum(kwargs["metric_weights"]) != 1.0:
-            raise ValueError(f"Must be a list of 5 values (Got {len(kwargs["metric_weights"])}) or total of 1.0 (Got {sum(kwargs["metric_weights"])}).")
+        if len(kwargs["metric_weights"]) != 5 or not math.isclose(sum(kwargs["metric_weights"]), 1.0, rel_tol=1e-9):
+            raise ValueError(
+                f"Must be a list of 5 values (Got {len(kwargs['metric_weights'])}) or "
+                f"total of 1.0 (Got {sum(kwargs['metric_weights'])}).")
         weights = kwargs["metric_weights"]
     else:
         # default weights for the metrics

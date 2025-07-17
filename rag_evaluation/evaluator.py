@@ -122,11 +122,11 @@ def evaluate_response(query: str, response: str, document: str,
     }
 
     #use user-defined weights
-    if "weights" in kwargs:
+    if "metric_weights" in kwargs:
         # [Query Relevance, Factual Accuracy, Coverage, Coherence, Fluency]
-        if len(kwargs["weights"]) != 5 or sum(kwargs["weights"]) != 1.0:
-            raise ValueError(f"Must be a list of 5 values (Got {len(kwargs["weights"])}) or total of 1.0 (Got {sum(kwargs["weights"])}).")
-        weights = kwargs["weights"]
+        if len(kwargs["metric_weights"]) != 5 or sum(kwargs["metric_weights"]) != 1.0:
+            raise ValueError(f"Must be a list of 5 values (Got {len(kwargs["metric_weights"])}) or total of 1.0 (Got {sum(kwargs["metric_weights"])}).")
+        weights = kwargs["metric_weights"]
     else:
         # default weights for the metrics
         weights = [0.25, 0.25, 0.25, 0.125, 0.125]

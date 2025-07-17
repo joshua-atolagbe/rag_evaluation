@@ -19,6 +19,9 @@ from .metrics import (
 )
 from .utils import normalize_score, calculate_weighted_accuracy, generate_report
 
+# define a version string and other metadata.
+__version__ = "0.2."
+
 __all__ = [
     "get_api_key",
     "set_api_key",

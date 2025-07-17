@@ -1,5 +1,7 @@
 # === Python ===
 __pycache__/
+.pytest_cache
+.pytest_cache/
 *.py[cod]
 *.pyo
 *.pyd
@@ -10,8 +12,10 @@ __pycache__/
 venv/
 .env
 test/
+test
 replacements.txt
 .ipynb_checkpoints/
+rag_evaluation_notebook.ipynb
 
 # === VSCode ===
 .vscode/
@@ -23,4 +27,4 @@ replacements.txt
 
 # === Others ===
 .DS_Store
-gpt_localtest_script.py
+rag_localtest_script.py

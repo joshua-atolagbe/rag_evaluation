@@ -48,7 +48,7 @@ rag_eval.set_api_key("gemini", "AIzaSy...")
 **3. Explicit lookup / fallback**
 
 ```python
-from rag_eval.config import get_api_key
+from rag_evaluation.config import get_api_key
 
 key = get_api_key("openai", default_key="sk-fallback...")
 
@@ -85,7 +85,7 @@ print(models.to_json())
 
 
 ```python
-from rag_eval.evaluator import evaluate_response
+from rag_evaluation.evaluator import evaluate_response
 
 # Define the inputs
 query = "Which large language model is currently the largest and most capable?"
@@ -186,7 +186,7 @@ If you’d like to emphasize certain aspects of your RAG system’s output - say
 ### Example
 
 ```python
-from rag_eval.evaluator import evaluate_response
+from rag_evaluation.evaluator import evaluate_response
 
 # Define the inputs
 query = "..."
@@ -207,7 +207,7 @@ report = evaluate_response(
 
 print(report)
 ```
-*This simple mechanism let users tailor the **Overall Accuracy** score to whatever aspects matter most in their evaluation scenario*
+*This mechanism let users tailor the **Overall Accuracy** score to whatever aspects matter most in their evaluation scenario*
 
 ## Output
 
@@ -219,4 +219,4 @@ The `evaluate_response` function returns a pandas DataFrame with:
 
 ## Need help?
 - **Open an issue or pull request on GitHub**  
-- **For more examples of how to use the package, see the [example notebook](https://github.com/OlaAkindele/rag_evaluation/main/rag_evaluation_notebook.ipynb)**
+- **For more examples of how to use the package, see the [example notebook](./rag_evaluation_notebook.ipynb)**

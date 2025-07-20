@@ -40,7 +40,7 @@ def evaluate_openai(criteria: str, steps: str, query: str, document: str, respon
             max_tokens=8192,
         )
         # print(resp.choices[0].message.content)
-        return int(resp.choices[0].message.content.strip())
+        return int(resp.choices[0].message.content.strip().replace(" ", "" ))
     except Exception as e:
         raise RuntimeError(f"OpenAI or Ollama evaluation API call failed: {e}")
 

@@ -60,7 +60,13 @@ key = get_api_key("openai", default_key="sk-fallback...")
 
 ## Usage
 ### Open-Source Local Models (Ollama models; does not require external APIs)
-**Currently, the package supports Llama, Mistral, and Qwen.**
+**Currently, the package has been tested with the following advanced Ollama models:**  
+– `llama3.2:1b`  
+– `mistral:latest`  
+– `qwen:latest`
+
+> **Note:** Other advanced Ollama models may also work — feel free to experiment, but if a model returns non-numeric output (e.g., a letter or sentence) instead of a score, it isn’t yet supported and will trigger an error. In that case, please switch to a more advance model or back to one of the tested models above.
+
 
 **Step 1**: Download Ollama. Check [here](https://ollama.com/download) for instructions  <br>
 
